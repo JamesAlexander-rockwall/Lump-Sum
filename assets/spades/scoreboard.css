@@ -1,0 +1,119 @@
+#scoreboard {
+    position: absolute;
+    width: 200px;
+    height: 172px;
+    left: 20px;
+    top: -152px;
+}
+
+#scoreboardBackground {
+    position: absolute;
+    width: 200px;
+    height: 152px;
+    left: 0px;
+    top: 0px;
+    background: #00000077;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+}
+
+#scoreboardDifficulty {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 12pt;
+    color: #000000;
+    text-align: center;
+    top: 152px;
+}
+
+.scoreboardPlayerRegion {
+    position: absolute;
+    width: 200px;
+    height: 38px;
+}
+
+#scoreboardPlayerRegionWest {
+    top: 38px;
+}
+
+#scoreboardPlayerRegionNorth {
+    top: 76px;
+}
+
+#scoreboardPlayerRegionEast {
+    top: 114px;
+}
+
+.scoreboardPlayerName {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    text-shadow: 2pt 2pt rgba(0, 0, 0, 0.5);
+    font-size: 12pt;
+}
+
+.scoreboardPlayerBar {
+    position: absolute;
+    height: 5px;
+    width: 180px;
+    top: 27px;
+    left: 10px;
+    background: white;
+    box-shadow: 2pt 2pt rgba(0, 0, 0, 0.5);
+}
+
+.scoreboardPlayerBarFill {
+    width: 50%;
+    height: 100%;
+    background: red;
+}
+
+.scoreboardPlayerScore {
+    position: absolute;
+    width: 30px;
+    left: 150px;
+    top: 0px;
+    text-align: center;
+    text-shadow: 2pt 2pt rgba(0, 0, 0, 0.5);
+    font-size: 17pt;
+}
+
+#scoreboardRoundScoresRegion {
+    position: absolute;
+    left: 200px;
+    width: 50px;
+    height: 100%;
+    background: black;
+}
+
+.scoreboardRoundNumber {
+    position: absolute;
+    width: 50px;
+    font-size: 8pt;
+    text-align: center;
+}
+
+.scoreboardRoundEntry {
+    position: absolute;
+    font-size: 12pt;
+    text-align: center;
+    width: 50px;
+    top: 15px;
+}
+
+.scoreboardRoundBidsEntry {
+    position: absolute;
+    font-size: 9pt;
+    text-align: center;
+    width: 50px;
+    top: 15px;
+}
+
+.scoreboardRoundEntrySeparator {
+    position: absolute;
+    width: 1px;
+    background: #999999;
+    height: 150px;
+}

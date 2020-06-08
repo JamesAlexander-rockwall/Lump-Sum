@@ -1,0 +1,80 @@
+.player_name {
+    visibility: hidden;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    font-size: 16pt;
+    text-shadow: 2pt 2pt rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.player_score {
+    visibility: hidden;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    font-size: 28pt;
+    text-shadow: 2pt 2pt rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#player_play_prompt {
+    position: absolute;
+    width: 200px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 16pt;
+    text-shadow: 2pt 2pt rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#hint_button {
+    position: absolute;
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border:#FFFFFF 2px solid;
+    border-width: 1px;
+    border-radius: 7px;
+    color:white;
+    font-size: 13pt;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#hint_button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#GameOverView {
+    z-index: 999;
+    width: 340px;
+    height:100px;
+    background:#000000;
+	border:#FFFFFF 2px solid;
+	border-radius:10px;
+	box-shadow: 30px 30px 0px rgba(0,0,0,0.5);
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#GameOverResultText {
+    margin-top: 10px;
+    font-size: 24pt;
+}
+
+#GameOverResultText2 {
+    margin-top: 10px;
+    font-size: 20pt;
+}

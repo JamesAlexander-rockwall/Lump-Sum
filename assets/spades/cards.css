@@ -1,0 +1,197 @@
+#cards_region {
+    overflow: visible;
+}
+
+.card, .cardBack, .cardFront, .cardShadow {
+    width: 115px;
+    height: 162px;
+}
+
+.card {
+    position: absolute;
+    overflow: visible;
+    transform: translate(-57px,-50%);
+    transition: none;
+}
+
+.cardBack {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0px,0px,1px) rotateY(0deg); 
+    transition: 0.6s;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.cardFront {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0px,0px,-1px) rotateY(180deg);
+    transition: 0.6s;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.cardFrontShade {
+    position: absolute;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0;
+}
+
+.cardFrontHighlight {
+    position: absolute;
+    border-radius: 8px;
+    width: 104%;
+    height: 104%;
+    left: -3.5%;
+    top: -3%;
+    border: 2px solid white;
+    opacity: 0;
+}
+
+.cardShadow {
+    position: absolute;
+    border-radius: 9px;
+    pointer-events: none;
+    transform: translate3d(0px,0px,0px); 
+    background: rgba(0,0,0,0.5);
+}
+
+.cardFlipContainer {
+    transition: 0.6s ease-in;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    transform-origin: 57px 100px;
+    position: relative;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.raiseContainer {
+    width: 115px;
+    height: 166px;
+    border-radius: 8px;
+    overflow: visible;
+    transform-style: preserve-3d;
+    transition: 0.6s ease-in;
+    transform: scale(1);
+    transform-origin: 57px 100px;
+    -moz-transform-origin: 57px 100px;
+    pointer-events: none;
+}
+
+.tinycard {
+    width: 21px;
+    height: 55px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 7px 0px 0px 0px;
+    clip: rect(0px, 21px, 55px, 0px);
+}
+
+.bump {
+    animation-name: bump;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes bump {
+    50% {
+        transform: translate(0px,-40%);
+    }
+    100% {
+        transform: translate(0px,0%);
+    }
+}
+
+.flashHighlight {
+    animation-name: flashHighlight;
+    animation-delay: 500ms;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes flashHighlight {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.twist {
+    animation-name: twist;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes twist {
+    25% {
+        transform: translate(-57px,-50%) rotate(10deg);
+    }
+    50% {
+        transform: translate(-57px,-50%) rotate(-20deg);
+    }
+    75% {
+        transform: translate(-57px,-50%) rotate(20deg);
+    }
+    100% {
+        transform: translate(-57px,-50%) rotate(0deg);
+    }
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+    25% {
+        transform: translate(-60%,-50%);
+    }
+    50% {
+        transform: translate(-40%,-50%);
+    }
+    75% {
+        transform: translate(-75%,-50%);
+    }
+    100% {
+        transform: translate(-50%,-50%);
+    }
+}
+
+.mugshake {
+    animation-name: mugshake;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mugshake {
+    25% {
+        transform: translate(-10%,0%);
+    }
+    50% {
+        transform: translate(10%,0%);
+    }
+    75% {
+        transform: translate(-25%,0%);
+    }
+    100% {
+        transform: translate(0%,0%);
+    }
+}
